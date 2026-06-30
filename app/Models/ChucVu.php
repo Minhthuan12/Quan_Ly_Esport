@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class ChucVu extends Model
+{
+    use HasFactory;
+
+    protected $table = 'chuc_vus';
+
+    protected $fillable = [
+        // Add fillable attributes here
+    ];
+
+    protected $casts = [
+        // Add attribute casting here
+    ];
+}
