@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('doi_tuyens', function (Blueprint $table) {
             $table->id();
+            $table->string('ten_doi');
+            $table->string('ten_viet_tat')->nullable();
+            $table->text('logo')->nullable();
+            $table->text('anh_bia')->nullable();
+            $table->text('mo_ta')->nullable();
+            $table->integer('diem_so')->default(0);
+            $table->foreignId('nguoi_quan_ly_id')->nullable()->constrained('nguoi_dungs')->onDelete('set null');
+            $table->string('email')->nullable();
+            $table->string('so_dien_thoai')->nullable();
             $table->timestamps();
         });
     }

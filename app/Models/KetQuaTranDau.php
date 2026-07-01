@@ -12,10 +12,10 @@ class KetQuaTranDau extends Model
     protected $table = 'ket_qua_tran_daus';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'tran_dau_id',
+        'doi_thang_id',
+        'ti_so_doi_1',
+        'ti_so_doi_2',
+        'mo_ta',
     ];
 }

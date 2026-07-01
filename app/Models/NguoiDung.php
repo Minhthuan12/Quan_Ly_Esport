@@ -12,10 +12,17 @@ class NguoiDung extends Model
     protected $table = 'nguoi_dungs';
 
     protected $fillable = [
-        // Add fillable attributes here
+        'ten_dang_nhap',
+        'mat_khau',
+        'ho_ten',
+        'email',
+        'avatar',
+        'so_dien_thoai',
+        'role_id',
+        'trang_thai',
     ];
 
-    protected $casts = [
-        // Add attribute casting here
+    protected $hidden = [
+        'mat_khau',
     ];
 }

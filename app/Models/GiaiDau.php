@@ -12,10 +12,18 @@ class GiaiDau extends Model
     protected $table = 'giai_daus';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'ten_giai',
+        'game_id',
+        'trang_thai',
+        'anh_bia',
+        'ngay_bat_dau',
+        'ngay_ket_thuc',
+        'giai_thuong',
+        'so_doi_tham_gia',
+        'so_doi_toi_da',
+        'the_thuc',
+        'luat_le',
+        'mo_ta',
+        'hinh_thuc',
     ];
 }

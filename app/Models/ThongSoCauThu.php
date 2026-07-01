@@ -12,10 +12,13 @@ class ThongSoCauThu extends Model
     protected $table = 'thong_so_cau_thus';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'van_dau_id',
+        'tuyen_thu_id',
+        'kills',
+        'deaths',
+        'assists',
+        'vang_kiem_duoc',
+        'sat_thuong',
+        'is_mvp',
     ];
 }

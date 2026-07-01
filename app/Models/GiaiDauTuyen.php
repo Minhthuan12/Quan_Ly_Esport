@@ -12,10 +12,7 @@ class GiaiDauTuyen extends Model
     protected $table = 'giai_dau_tuyens';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'giai_dau_id',
+        'doi_tuyen_id',
     ];
 }

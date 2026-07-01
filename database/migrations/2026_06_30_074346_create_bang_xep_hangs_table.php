@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('bang_xep_hangs', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('giai_dau_id')->constrained('giai_daus')->onDelete('cascade');
+            $table->foreignId('doi_tuyen_id')->constrained('doi_tuyens')->onDelete('cascade');
+            $table->integer('hang')->default(0);
+            $table->integer('thang')->default(0);
+            $table->integer('thua')->default(0);
+            $table->string('he_so')->default('+0');
+            $table->integer('diem')->default(0);
             $table->timestamps();
         });
     }

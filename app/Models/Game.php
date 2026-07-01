@@ -12,10 +12,12 @@ class Game extends Model
     protected $table = 'games';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'ten_game',
+        'ten_tieng_anh',
+        'the_loai',
+        'logo',
+        'anh_bia',
+        'mo_ta',
+        'trang_thai',
     ];
 }

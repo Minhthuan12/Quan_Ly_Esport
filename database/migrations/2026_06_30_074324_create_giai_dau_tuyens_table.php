@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('giai_dau_tuyens', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('giai_dau_id')->constrained('giai_daus')->onDelete('cascade');
+            $table->foreignId('doi_tuyen_id')->constrained('doi_tuyens')->onDelete('cascade');
             $table->timestamps();
         });
     }

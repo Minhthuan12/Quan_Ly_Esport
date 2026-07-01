@@ -12,10 +12,8 @@ class NhaTaiTroGiaiDau extends Model
     protected $table = 'nha_tai_tro_giai_daus';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'giai_dau_id',
+        'ten_nha_tai_tro',
+        'logo',
     ];
 }

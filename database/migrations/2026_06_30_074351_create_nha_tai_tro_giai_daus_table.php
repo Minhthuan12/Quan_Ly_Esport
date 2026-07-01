@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('nha_tai_tro_giai_daus', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('giai_dau_id')->constrained('giai_daus')->onDelete('cascade');
+            $table->string('ten_nha_tai_tro');
+            $table->text('logo')->nullable();
             $table->timestamps();
         });
     }

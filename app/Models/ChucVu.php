@@ -12,10 +12,7 @@ class ChucVu extends Model
     protected $table = 'chuc_vus';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'ten_chuc_vu',
+        'mo_ta',
     ];
 }

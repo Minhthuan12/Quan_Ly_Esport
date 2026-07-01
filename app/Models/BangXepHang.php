@@ -12,10 +12,12 @@ class BangXepHang extends Model
     protected $table = 'bang_xep_hangs';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'giai_dau_id',
+        'doi_tuyen_id',
+        'hang',
+        'thang',
+        'thua',
+        'he_so',
+        'diem',
     ];
 }

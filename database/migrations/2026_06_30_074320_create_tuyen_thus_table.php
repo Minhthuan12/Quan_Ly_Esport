@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('tuyen_thus', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('doi_tuyen_id')->nullable()->constrained('doi_tuyens')->onDelete('set null');
+            $table->string('ho_ten');
+            $table->string('nickname');
+            $table->string('vi_tri_thi_dau');
+            $table->text('avatar')->nullable();
+            $table->integer('so_ao')->nullable();
+            $table->string('quoc_tich')->default('Việt Nam');
+            $table->date('ngay_sinh')->nullable();
             $table->timestamps();
         });
     }

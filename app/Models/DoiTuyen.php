@@ -12,10 +12,14 @@ class DoiTuyen extends Model
     protected $table = 'doi_tuyens';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'ten_doi',
+        'ten_viet_tat',
+        'logo',
+        'anh_bia',
+        'mo_ta',
+        'diem_so',
+        'nguoi_quan_ly_id',
+        'email',
+        'so_dien_thoai',
     ];
 }

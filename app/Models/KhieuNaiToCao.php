@@ -12,10 +12,12 @@ class KhieuNaiToCao extends Model
     protected $table = 'khieu_nai_to_caos';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'nguoi_khieu_nai_id',
+        'tieu_de',
+        'noi_dung',
+        'bang_chung',
+        'trang_thai_xu_ly',
+        'nguoi_xu_ly_id',
+        'ket_qua',
     ];
 }

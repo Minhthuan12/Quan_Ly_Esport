@@ -12,10 +12,7 @@ class ChucNang extends Model
     protected $table = 'chuc_nangs';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'ten_chuc_nang',
+        'ma_chuc_nang',
     ];
 }

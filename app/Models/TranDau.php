@@ -12,10 +12,15 @@ class TranDau extends Model
     protected $table = 'tran_daus';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'giai_dau_id',
+        'doi_1_id',
+        'doi_2_id',
+        'thoi_gian',
+        'ti_so',
+        'trang_thai',
+        'doi_thang_id',
+        'dia_diem',
+        'vong_dau',
+        'series',
     ];
 }

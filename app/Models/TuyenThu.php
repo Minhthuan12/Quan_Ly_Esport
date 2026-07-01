@@ -12,10 +12,13 @@ class TuyenThu extends Model
     protected $table = 'tuyen_thus';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'doi_tuyen_id',
+        'ho_ten',
+        'nickname',
+        'vi_tri_thi_dau',
+        'avatar',
+        'so_ao',
+        'quoc_tich',
+        'ngay_sinh',
     ];
 }

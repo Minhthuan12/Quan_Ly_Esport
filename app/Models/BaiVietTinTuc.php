@@ -12,10 +12,13 @@ class BaiVietTinTuc extends Model
     protected $table = 'bai_viet_tin_tucs';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'tieu_de',
+        'slug',
+        'anh_bia',
+        'noi_dung',
+        'ngay_dang',
+        'nguoi_dang_id',
+        'tom_tat',
+        'luot_xem',
     ];
 }

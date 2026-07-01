@@ -12,10 +12,10 @@ class ChiTietVanDau extends Model
     protected $table = 'chi_tiet_van_daus';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'tran_dau_id',
+        'so_thu_tu_van',
+        'thoi_gian_dau',
+        'doi_thang_id',
+        'video_url',
     ];
 }

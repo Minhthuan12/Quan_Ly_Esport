@@ -12,10 +12,7 @@ class PhanQuyen extends Model
     protected $table = 'phan_quyens';
 
     protected $fillable = [
-        // Add fillable attributes here
-    ];
-
-    protected $casts = [
-        // Add attribute casting here
+        'role_id',
+        'permission_id',
     ];
 }
